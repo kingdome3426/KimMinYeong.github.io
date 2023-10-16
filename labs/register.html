@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <title>회원가입</title>
 </head>
+<style>
+    p {color:red; font-size:10pt}
+    div.title {font-weight:bold; background:lightblue; width:800px; padding-left:10px; margin:10px;}
+    div.inp label{margin-left:8px; text-align:right; width:130px; padding-right:8px; display:inline-block;}
+    a.essential {color:red;}
+    div.sub input {margin:10px;}
+    div.sub {margin-left:200px}
+
+</style>
 <body>
-<h1>취업 정보 계정 만들기</h1>
-<p>* 필수 입력 항목</p>
-<p>기본 정보</p>
+    <h1>취업 정보 계정 만들기</h1>
+    <p>* 필수 입력 항목</p>
+    <div class="title">기본 정보</div>
 <form name="resume" method="post">
-    <div id="information">
-        <label for="u_name">이름*</label>
+    <div class="inp">
+        <label for="u_name">이 름<a class="essential">*</a></label>
         <input type="text" name="name" id="u_name" size="8"><br>
-        <label for="u_email">이메일*</label>
+        <label for="u_email">이메일<a class="essential">*</a></label>
         <input type="email" name="email" id="u_email" size="15" placeholder="id@domain_name"><br>
-        <label for="u_pw">암호*</label>
+        <label for="u_pw">암호<a class="essential">*</a></label>
         <input type="password" name="pw" id="u_pw" size="12"><br>
-        <label for="u_pw_check">암호 확인*</label>
+        <label for="u_pw_check">암호 확인<a class="essential">*</a></label>
         <input type="password" name="pw_c" id="u_pw_check" size="12"><br>
-        <label for="u_phone">모바일 폰*</label>
+        <label for="u_phone">모바일 폰<a class="essential">*</a></label>
         <input type="tel" name="phone" id="u_phone" size="13" placeholder="010-0000-0000"><br>
         <label for="u_web">개인 홈페이지</label>
         <input type="url" name="web" id="u_web" size="30" placeholder="http://"><br>
-        <label for="u_address">주소*</label>
+        <label for="u_address">주소<a class="essential">*</a></label>
         <input type="text" name="address" id="u_address" size="30"><br>
     </div>
-    <div id="education">
-        <p>학력</p>
-        <label for="e_name">학교 명*</label>
+
+    <div class="title">학력</div>
+    <div class="inp">
+        <label for="e_name">학교 명<a class="essential">*</a></label>
         <input type="text" name="e_name" id="e_name" size="12"><br>
-        <label for="e_major">전공*</label>
+        <label for="e_major">전 공<a class="essential">*</a></label>
         <input type="text" name="major" id="e_major" size="12"><br>
-        <label for="e_graduated">졸업 여부*</label>
+        <label for="e_graduated">졸업 여부<a class="essential">*</a></label>
         <select name="e_graduated" id="e_graduated">
             <option value="-1">---선택---</option>
             <option value="0">졸업예정</option>
@@ -40,25 +50,25 @@
         <label for="e_grad_date">졸업 (예정)일</label>
         <input type="date" name="grad_date" id="e_grad_date"><br>
     </div>
-    <div id="work">
-        <p>업무 경력</p>
+
+    <div class="title">업무 경력</div>
+    <div class="inp">
         <label for="w_workplace_name">근무업체명</label>
         <input type="text" name="workplace_name" id="w_workplace_name" size="20"><br>
-        <label for="w_position">직위</label>
+        <label for="w_position">직 위</label>
         <input type="text" name="position" id="w_position" size="10"><br>
         <label for="w_in_charge">담당 업무</label>
         <textarea name="in_charge" id="w_in_charge" rows="10" cols="80">이전 업체에서 담당한 업무를 기술하시오.</textarea><br>
         <label for="w_year">근무년수</label>
         <input type="number" name="year" id="w_year" min="0" max="10" step="0.5">년<br>
     </div>
-    <div id="letter">
-        <p>자기소개서</p>
+
+    <div class="title">자기소개서</div>
+    <div class="inp">
         <label for="letter_file">첨부 파일</label>
         <input type="file" name="letter_file" id="letter_file"><br>
     </div>
-    <div id="submit">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="sub">
         <input type="submit" value="제출">
         <input type="reset" value="재작성">
     </div>
