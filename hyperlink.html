@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    a:link, a:visited {color: cornflowerblue; text-decoration:none;}
+    div#test {background-color:deeppink; padding:30px}
+    div#link span {background-color:deepskyblue;  margin:20px; display:inline-block}
+    div#test2 {background-color:darkcyan;padding:50px;}
+    p {background-color:darkkhaki}
+</style>
 <body>
-    <a href='images/탑거.jpeg' download>사진 다운</a>
-    <a href="#addr">눌러봐</a>
-    <a href="mailto:someone@naver.com">메일 주소야</a>
-    <a href="practice.html" target="_blank">노력의 성과 ㅋㅋ</a>
-    <p id="addr">여기다<div>dd</p></div>
+    <div id="link">링크 영역
+        <a href='images/탑거.jpeg' download><span>사진 다운</span></a>
+        <a href="#addr"><span>눌러보ㅏ</span></a>
+        <a href="mailto:someone@naver.com"><span>메일</span></a>
+        <a href="practice.html" target="_blank"><span>노력의 성과 ㅋㅋ</span></a>
+    </div>
+    <div id="test">블록태그</div>
+    <div id="test2">패딩준블록</div>
+    <p>p태그 기본</p>
 </body>
 </html>
