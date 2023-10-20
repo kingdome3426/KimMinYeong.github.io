@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <title>환영</title>
     <style>
-        div#greet {margin:30px;
-            background-color:cadetblue;
-            width:30%;
+        div#greet {margin:10px;
+            background-color:#00296b;
+            width:500px;
+            height:100px;
             text-align:center;
             font-size:x-large;
             color: greenyellow;
             display:inline-block;}
+        span {position:relative;
+                        top:33%;}
+        a span {position:relative;
+                top:30%;}
         h2 {
             font-size:x-large;
             position:relative;
@@ -18,27 +23,35 @@
         }
         div#name {
             margin:10px;
-            background-color:tomato;
+            background-color:#fdc500;
             height:200px;
             display:inline-block;
-            width:30%;
+            width:200px;
             text-align:center;
             color:white;
             float:left;
         }
-        a {background-color: cornflowerblue;
-                    display:inline-block;
-                    width:5%;
-                    text-align:center;
-                    height:100px;}
+        a {background-color: #06aed5;
+            display:inline-block;
+            width:237px;
+            text-align:center;
+            height:80px;
+            font-size:x-large;
+            text-decoration:none;
+            margin:10px;
+        }
+        a span:hover {color: white;}
+        a:link, a:visited {color: greenyellow;}
     </style>
 </head>
 <body>
     <div id="name"><h2>XXX 취업 정보사</h2></div>
-    <div id="greet">취업 정보 사이트 방문을 환영합니다.</div>
-    <div>
-        <a href="register.html">회원가입</a>
-                <a href="login.html">로그인</a>
+    <div id="greet"><span>취업 정보 사이트 방문을 환영합니다.</span></div>
+    <div id="btn">
+        <a href="register.html"><span>회원가입</span></a>
+        <a href="login.html"><span>로그인</span></a><br>
+        <a href="register_css.html" style="width:720px;
+                                    background-color:#da2c38"><span>회원가입(과제2)</span></a>
     </div>
 </body>
 </html>
