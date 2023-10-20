@@ -31,7 +31,7 @@
             color:white;
             float:left;
         }
-        div#container{
+        div.container{
             display:inline-block
         }
         a {background-color: #06aed5;
@@ -43,23 +43,47 @@
             text-decoration:none;
             margin:10px;
         }
-        a span:hover {color: white;}
-        a:link, a:visited {color: black;}
+        a span:hover {
+            color: white;}
+        a:link, a:visited {
+            color: black;}
+        li {
+            list-style-type:square;
+        }
+        li:nth-child(even){
+            background-color:pink;}
+        li:hover{
+            background-color:cornflowerblue;
+            color:white;}
     </style>
 </head>
 <body>
-    <div id="container">
+    <div class="container" style="display:inline-block;">
         <div id="name"><h2>XXX 취업 정보사</h2></div>
         <div id="greet"><span>취업 정보 사이트 방문을 환영합니다.</span></div>
-        <div id="btn">
+        <div class="btn">
             <a href="register.html"><span>회원가입</span></a>
             <a href="login.html"><span>로그인</span></a><br>
             <a href="register_css.html" style="width:720px;
                                         background-color:#da2c38"><span>회원가입(과제2)</span></a>
         </div>
     </div>
+    <div class="container">
+    <a href="https://github.com/kingdome3426/myWeb/tree/master/labs"
+       style="height:160px;
+       display:inline-block;
+        float:right;"><span style="position:relative; top:36%;">my github site</span></a>
+    </div><br>
 
-<img src="/images/탑거.jpeg" style="display:inline-block;width:360px;"><br>
-<img src="/images/12.jpg" style="display:inline-block;width:360px;margin:10px;">
+    <div class="container">
+        <UL>
+            <li>안녕하세요</li>
+            <li>반가워요</li>
+            <li>고마워요</li>
+            <li>다시 만나요</li>
+        </UL>
+    </div>
+
+
 </body>
 </html>
