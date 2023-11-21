@@ -5,7 +5,13 @@
     <title>Title</title>
     <style>
         .container {width:800px; height: 1000px; border: 2px solid black; overflow:auto}
-        .pos {width: 150px; height:80px; top:100px; left: 420px; border: 4px solid orange}
+        .pos {width:300px;
+            font-size:2em;
+            font-weight:bolder;
+            text-align:center;
+            border: 4px solid orange;
+            background-color: thistle;
+        padding:60px;}
         .static {position: static; background-color: seagreen;}
         .fixed {position:fixed; border: 3px solid tomato}
         .absolute {position: absolute; top:400px; left:300px; border: 4px solid turquoise;}
@@ -14,10 +20,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="pos static">정적 위치 콘텐츠</div>
+        <div class="pos static">static position contents</div>
         <div class="fixed pos">
             <img src="images/탑거.jpeg" style="width: 400px;">
-            <a>이건 테스트용</a>
+            <a style="width:300px;background-color:chartreuse">이건 테스트용</a>
         </div>
     </div>
 
