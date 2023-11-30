@@ -1,1 +1,1 @@
-# https://kingdome3426.github.io/myWeb/labs
+# https://kingdome3426.github.io/myWeb/myPage
