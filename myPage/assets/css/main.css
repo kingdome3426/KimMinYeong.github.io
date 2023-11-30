@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #008374;
+  --color-primary: #0c2296;
   --color-secondary: #f85a40;
 }
 
@@ -95,7 +95,7 @@ section {
 }
 
 .section-header p {
-  margin-bottom: 0;
+  padding-bottom: 0;
   color: #6f6f6f;
 }
 
@@ -238,7 +238,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #00796b;
+  background: rgb(9, 29, 121);
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -280,7 +280,7 @@ section {
   color: rgba(255, 255, 255, 0.7);
   line-height: 0;
   transition: 0.3s;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 .topbar .social-links a:hover {
@@ -301,11 +301,6 @@ section {
   left: 0;
   height: 70px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-}
-
-.header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
 }
 
 .header .logo h1 {
@@ -1868,10 +1863,10 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
+
   position: relative;
   background: var(--color-primary);
-  padding: 60px 0 0 0;
+  padding: 60px 0 100vh 0;
 }
 
 @media (min-width: 1365px) {
@@ -1890,7 +1885,7 @@ section {
 .hero p {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .hero .btn-get-started {
