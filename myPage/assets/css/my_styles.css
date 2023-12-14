@@ -1,0 +1,40 @@
+:root {
+   --font-primary: "Montserrat", sans-serif;
+}
+
+.setting {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.inforp .text-end{
+    color: #68B20DFF;
+}
+.infor{
+    font-size: 1.5rem;
+    color: #08185e;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    height: 2.5rem;
+}
+
+.infor i{
+    margin-right: 0.5rem;
+}
+
+.inforp {
+    margin-top: 0;
+}
+
+.about h5 {
+    font-family: var(--font-korean);
+}
+
+card {
+    width: 40%;
+}
+
+.hobby h3{
+    font-family: var(--font-korean);
+}
