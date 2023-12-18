@@ -44,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: #00b6a1;
+  color: var(--color-secondary);
   text-decoration: none;
 }
 
@@ -1606,7 +1606,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info-container {
   background-color: var(--color-primary);
-  height: 100%;
   padding: 20px;
   border-radius: 10px 0 0 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
@@ -1614,7 +1613,7 @@ section {
 
 .contact .info-item {
   width: 100%;
-  background-color: #009282;
+  background-color: var(--color-secondary);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -1628,7 +1627,6 @@ section {
 .contact .info-item i {
   font-size: 20px;
   color: #fff;
-  float: left;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -2477,12 +2475,12 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #fff;
-  font-family: var(--font-primary);
+  font-family: var(--font-korean);
 }
 
 .footer .footer-info p {
   font-size: 14px;
-  font-family: var(--font-primary);
+  font-family: var(--font-korean);
 }
 
 .footer .social-links a {
@@ -2505,6 +2503,7 @@ section {
 }
 
 .footer h4 {
+  font-family: var(--font-korean);
   font-size: 16px;
   font-weight: bold;
   position: relative;
