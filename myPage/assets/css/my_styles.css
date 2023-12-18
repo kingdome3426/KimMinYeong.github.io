@@ -1,5 +1,8 @@
 :root {
    --font-primary: "Montserrat", sans-serif;
+  --color-default: #222222;
+  --color-primary: #0c2296;
+  --color-secondary: #68b20d;
 }
 
 .setting {
@@ -9,7 +12,7 @@
 }
 
 .inforp .text-end{
-    color: #68B20DFF;
+    color: var(--color-secondary);
 }
 .infor{
     font-size: 1.5rem;
@@ -37,4 +40,56 @@ card {
 
 .hobby h3{
     font-family: var(--font-korean);
+}
+
+.imgtext {
+    vertical-align:bottom;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius:50%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .8;
+    transition: opacity .6s ease;
+    height:30px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--color-primary);
+}
+
+.carousel-control-prev-icon {
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:48px;
+    height:48px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-next-icon {
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:48px;
+    height:48px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel{
+    height:50%;
+    width:50%;
 }
