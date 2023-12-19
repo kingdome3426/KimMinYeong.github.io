@@ -5,6 +5,12 @@
   --color-secondary: #68b20d;
 }
 
+html,
+body{
+width:100%;
+overflow-x:hidden;
+}
+
 .setting {
     margin-bottom: 0;
     padding-bottom: 0;
