@@ -99,9 +99,11 @@ card {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.carousel{
-    height:50%;
-    width:50%;
+@media (min-width: 768px) {
+    .carousel {
+        height: 50%;
+        width: 50%;
+    }
 }
 
 .collapse {
