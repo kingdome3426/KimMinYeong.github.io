@@ -96,8 +96,16 @@
           <p>좋은 하루 되시길 바랍니다.</p>
           <div class="d-flex justify-content-center justify-content-lg-start py-5">
             <a href="#about" class="btn-get-started">Let's start!</a>
+              <button type="button" class="btn-get-started ms-3" data-bs-toggle="tooltip" title="Hello :D">Click Me</button>
               <a href="https://youtu.be/n-UIRqgXjGA?si=DGkrc09AXbhw1RTr" class="glightbox btn-watch-video d-flex align-items-center">
                 <i class="bi bi-play-circle"></i><span>My Favorite Song</span></a>
+                <script>
+                // Initialize tooltips
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')) ;
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+                });
+                </script>
           </div>
         </div>
 
