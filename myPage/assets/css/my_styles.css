@@ -123,3 +123,21 @@ card {
 .section-header p{
     margin-bottom:0.2rem;
 }
+
+h3{
+    font-family: var(--font-korean);
+    font-weight: 400;
+    font-size: 35px;
+}
+
+thead{
+    font-size: 25px;
+}
+
+th{
+    text-align:center;
+}
+
+tr{
+    text-align:center;
+}
